@@ -2,16 +2,29 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://www.google.com">
-    <meta property="og:title" content=" ">
-    <meta property="og:description" content=" ">
-    <meta property="og:image" content="img1.png">
-    <title>[잉어] 43.8cm </title>
-    <description>크기에 비해 안정적인 수익을 주는 녀석이네요.</description>
-    <script>
-        window.location.replace("https://www.youtube.com/shorts/tzD9OxAHtzU");
+    <title>[잉어] 43.8cm</title>
+    <meta name="description" content="크기에 비해 안정적인 수익을 내주는 녀석이네요.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="[잉어] 43.8cm">
+    <meta property="og:description" content="크기에 비해 안정적인 수익을 내주는 녀석이네요.">
+    
+    <meta property="og:image" content="https://yourdomain.com/img1.png">
+    <meta property="og:url" content="https://yourdomain.com/">
+
+    <script type="text/javascript">
+        // 크롤러 봇이 아닌 일반 유저만 즉시 리다이렉트 시킵니다.
+        const userAgent = navigator.userAgent.toLowerCase();
+        const isBot = /bot|crawl|slurp|spider|facebookexternalhit|kakaotalk-scrap|naverbyweb/i.test(userAgent);
+        
+        if (!isBot) {
+            window.location.replace("https://www.google.com");
+        }
     </script>
 </head>
 <body>
+    <noscript>
+        <meta http-equiv="refresh" content="1; url=https://www.google.com">
+    </noscript>
 </body>
 </html>
